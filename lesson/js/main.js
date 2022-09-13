@@ -1,24 +1,41 @@
-// Имена переменных
-// Если имя содержит несколько слов, обычно используется верблюжья нотация
+// простые
 
-const myName = 'my name';
+const number = 8;
+const boolean = false;
 
-// Варианты создания переменных
+const myName = 'Nikita';
 
-var name = 'name'; // устарело
+const empty = undefined;
+const nullable = null;
 
-let age = 4;
-const message = 'message';
+const str1 = 'str1';
+const str3 = `${numb} ${myName}`;
 
-// let - можем перезаписывать значение переменной
 
-let user = 'uer';
+// сложные
 
-user = 4;
+const array = ['1', 2, 3, function(){}];
 
-// user будет = 4
-// const изменить нельзя
+const man = {
+  name: 'nikita',
+  age: 4,
+  adult: false,
+  //...
+};
 
-// Константы в верхнем регистре
 
-const COLOR_RED = '#F00';
+// '' => false
+// undefined => false
+// null => false
+// 0 => false
+// {} => true
+// [] => true
+
+
+
+if (number) {
+  console.log('истина');
+} else {
+  console.log('ложь');
+}
+
